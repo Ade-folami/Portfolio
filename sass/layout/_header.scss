@@ -1,0 +1,30 @@
+.main {
+  background-color: $color-white;
+  padding: 1rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+
+  &__logo {
+    height: 100%;
+    // display: inline-block;
+  }
+
+  &__navigation {
+    padding: 1rem;
+
+    &-item {
+      padding: 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      transform: scale(1);
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+}

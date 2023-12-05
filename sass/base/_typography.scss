@@ -1,0 +1,13 @@
+body {
+  font-family: verdana;
+  font-weight: 400;
+  font-size: 16px;
+  color: $color-primary;
+  background-color: $color-primary;
+}
+
+.heading {
+  &__primary {
+    font-size: 2rem;
+  }
+}
