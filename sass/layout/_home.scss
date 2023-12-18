@@ -8,11 +8,6 @@
   &-description {
     display: flex;
     flex-direction: column;
-    color: $color-white;
-  }
-
-  &-image {
-    display: block;
-    width: 30rem;
+    justify-content: space-around;
   }
 }
