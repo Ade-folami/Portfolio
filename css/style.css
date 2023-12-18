@@ -67,3 +67,16 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
+    .section__home-description--hi {
+      font-weight: 500;
+      color: #fff; }
+    .section__home-description--name {
+      color: #fff;
+      font-size: 4rem; }
+      .section__home-description--name--big {
+        color: #e12148; }
+    .section__home-description--job {
+      color: white;
+      margin-bottom: 2rem; }
+    .section__home-description--buttons {
+      padding: 1rem; }

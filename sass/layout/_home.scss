@@ -9,5 +9,28 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    &--hi {
+      font-weight: 500;
+      color: $color-white;
+    }
+
+    &--name {
+      color: $color-white;
+      font-size: 4rem;
+
+      &--big {
+        color: $color-pink;
+      }
+    }
+
+    &--job {
+      color: white;
+      margin-bottom: 2rem;
+    }
+
+    &--buttons {
+      padding: 1rem;
+    }
   }
 }
