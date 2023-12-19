@@ -19,3 +19,23 @@
     transform: translateY(0.3rem);
   }
 }
+
+.button-square {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  background-color: $color-white;
+  color: $color-primary;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.3s;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: translateY(0.3rem);
+  }
+}

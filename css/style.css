@@ -36,6 +36,21 @@ body {
   .button:active {
     transform: translateY(0.3rem); }
 
+.button-square {
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  background-color: #fff;
+  color: #2326bef9;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.3s;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .button-square:hover {
+    transform: scale(1.1); }
+  .button-square:active {
+    transform: translateY(0.3rem); }
+
 .header {
   background-color: #2326bef9;
   display: flex;
@@ -78,5 +93,16 @@ body {
     .section__home-description--job {
       color: white;
       margin-bottom: 2rem; }
-    .section__home-description--buttons {
-      padding: 1rem; }
+    .section__home-description--buttons-resume {
+      background-color: #e12148;
+      color: #fff;
+      margin-right: 3rem;
+      transition: all 0.3s; }
+      .section__home-description--buttons-resume:hover {
+        background-color: #fff;
+        color: #e12148; }
+    .section__home-description--buttons--contact {
+      transition: all 0.3s; }
+      .section__home-description--buttons--contact:hover {
+        background-color: #999;
+        color: #fff; }
