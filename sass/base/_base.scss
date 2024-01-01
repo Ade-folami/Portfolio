@@ -6,25 +6,13 @@
 
 html {
   font-size: 62.5%; //1rem =10px
-
-  // @include respond(tab-land) {
-  //   //max-width <1200
-  //   font-size: 56.25%; //1rem = 9px, 9/16 =56.25%;
-  // }
-
-  // @include respond(tab-port) {
-  //   //max-width < 900
-  //   font-size: 50%; //1rem =8px, 8/16 =50%
-  // }
-
-  // @include respond(big-desktop) {
-  //   font-size: 75%; //1rem =12px, 12/16 =75%;
 }
 
 body {
   box-sizing: border-box;
   padding: 0.2rem;
+}
 
-  //   @include respond(tab-port) {
-  //     padding: 0;
+.portfolio__body {
+  padding: 0.2rem;
 }

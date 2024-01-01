@@ -14,12 +14,24 @@
 
   &__navigation {
     padding: 1rem;
+    font-size: 1.4rem;
 
     &-item {
       padding: 1.5rem 3rem;
       text-decoration: none;
       text-transform: uppercase;
       color: $color-white;
+      transition: all 0.3s;
+      display: inline-block;
+
+      &:hover {
+        color: $color-pink;
+        transform: scale(1.2);
+      }
+
+      &:active {
+        transform: translateY(0.3rem);
+      }
     }
 
     &-button {
