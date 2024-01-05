@@ -1,0 +1,9 @@
+.section__services {
+  background-color: $color-primary;
+  padding: 2rem;
+
+  &--heading {
+    color: $color-pink;
+    font-style: italic;
+  }
+}

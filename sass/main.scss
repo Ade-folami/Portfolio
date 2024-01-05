@@ -1,5 +1,6 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
+@import "abstracts/utilities";
 
 @import "base/base";
 @import "base/typography";
@@ -8,3 +9,5 @@
 
 @import "layout/header";
 @import "layout/home";
+@import "layout/about";
+@import "layout/services";

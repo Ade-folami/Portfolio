@@ -1,0 +1,21 @@
+.section__about {
+  background-color: $color-primary;
+  margin-top: -3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &-paragraph {
+    color: $color-white;
+  }
+
+  &-skills {
+    display: flex;
+    justify-content: space-around;
+
+    &--heading {
+      color: $color-pink;
+    }
+  }
+}

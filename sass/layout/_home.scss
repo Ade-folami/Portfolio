@@ -51,4 +51,16 @@
       }
     }
   }
+
+  &-imageblock {
+    &--me {
+      border-radius: 50%;
+      display: inline-block;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
 }

@@ -5,8 +5,7 @@ body {
   background-color: $color-white;
 }
 
-.heading {
-  &__primary {
-    font-size: 2rem;
-  }
+.heading-primary {
+  font-size: 3.5rem;
+  color: $color-pink;
 }

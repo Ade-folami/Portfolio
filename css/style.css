@@ -1,3 +1,6 @@
+.u-center {
+  text-align: center; }
+
 * *::after *::before {
   margin: 0;
   padding: 0;
@@ -19,8 +22,9 @@ body {
   font-size: 16px;
   background-color: #fff; }
 
-.heading__primary {
-  font-size: 2rem; }
+.heading-primary {
+  font-size: 3.5rem;
+  color: #e12148; }
 
 .button {
   text-decoration: none;
@@ -117,3 +121,31 @@ body {
       .section__home-description--buttons--contact:hover {
         background-color: #999;
         color: #fff; }
+  .section__home-imageblock--me {
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s; }
+    .section__home-imageblock--me:hover {
+      transform: scale(1.2); }
+
+.section__about {
+  background-color: #b8b9e2f9;
+  margin-top: -3rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .section__about-paragraph {
+    color: #fff; }
+  .section__about-skills {
+    display: flex;
+    justify-content: space-around; }
+    .section__about-skills--heading {
+      color: #e12148; }
+
+.section__services {
+  background-color: #b8b9e2f9;
+  padding: 2rem; }
+  .section__services--heading {
+    color: #e12148;
+    font-style: italic; }
