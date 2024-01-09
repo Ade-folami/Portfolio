@@ -1,9 +1,40 @@
 .section__services {
-  background-color: $color-primary;
   padding: 2rem;
 
   &--heading {
-    color: $color-pink;
-    font-style: italic;
+    color: $color-black;
+    font-style: calibri;
+  }
+
+  &--container {
+    display: flex;
+    padding: 1rem;
+    font-size: 1.3rem;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      margin: 1.5rem;
+      background-color: $color-pink;
+      border-radius: 1rem;
+      transition: all 0.3s;
+      color: $color-primary;
+      border: 3px solid $color-black;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &--icon {
+        padding: 1rem;
+      }
+
+      &--heading {
+        text-transform: uppercase;
+        color: $color-black;
+      }
+    }
   }
 }

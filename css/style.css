@@ -13,6 +13,10 @@ body {
   box-sizing: border-box;
   padding: 0.2rem; }
 
+.main {
+  background-color: #b8b9e2f9;
+  padding: 2rem; }
+
 .portfolio__body {
   padding: 0.2rem; }
 
@@ -129,8 +133,6 @@ body {
       transform: scale(1.2); }
 
 .section__about {
-  background-color: #b8b9e2f9;
-  margin-top: -3rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -141,11 +143,32 @@ body {
     display: flex;
     justify-content: space-around; }
     .section__about-skills--heading {
-      color: #e12148; }
+      color: #000; }
 
 .section__services {
-  background-color: #b8b9e2f9;
   padding: 2rem; }
   .section__services--heading {
-    color: #e12148;
-    font-style: italic; }
+    color: #000;
+    font-style: calibri; }
+  .section__services--container {
+    display: flex;
+    padding: 1rem;
+    font-size: 1.3rem; }
+    .section__services--container-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      margin: 1.5rem;
+      background-color: #e12148;
+      border-radius: 1rem;
+      transition: all 0.3s;
+      color: #b8b9e2f9;
+      border: 3px solid #000; }
+      .section__services--container-item:hover {
+        transform: scale(1.1); }
+      .section__services--container-item--icon {
+        padding: 1rem; }
+      .section__services--container-item--heading {
+        text-transform: uppercase;
+        color: #000; }
