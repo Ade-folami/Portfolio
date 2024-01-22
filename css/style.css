@@ -158,15 +158,15 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 100%;
       padding: 1rem;
       margin: 1.5rem;
-      background-color: #e12148;
-      border-radius: 1rem;
+      background-color: #000;
       transition: all 0.3s;
-      color: #b8b9e2f9;
-      border: 3px solid #000; }
+      color: #fff; }
       .section__services--container-item:hover {
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        border: 2px solid #000; }
       .section__services--container-item--icon {
         padding: 1rem; }
       .section__services--container-item--heading {
