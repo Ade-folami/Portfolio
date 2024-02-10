@@ -72,7 +72,8 @@ body {
   color: #fff; }
   .header__logo {
     height: 100%;
-    width: 10rem; }
+    width: 10rem;
+    background-color: transparent; }
   .header__navigation {
     padding: 1rem;
     font-size: 1.4rem; }
@@ -92,7 +93,6 @@ body {
       margin-left: 3rem; }
 
 .section__home {
-  background-color: #b8b9e2f9;
   display: flex;
   justify-content: space-around;
   align-items: center;
