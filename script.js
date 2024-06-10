@@ -1,11 +1,15 @@
 "use strict";
 
-//selecting elements
-const aboutBtn = document.querySelector("#header__navigation-about");
-const about = document.querySelector("#section__about");
-const services = document.querySelector("#header__navigation-services");
+//Selecting elements
+const nav = document.querySelector(".header__navigation");
 
-aboutBtn.addEventListener(
-  "click",
-  about.scrollIntoView({ behavior: "smooth" })
-);
+//Smooth scrolling for sections navigation
+nav.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains("header__navigation-item")) {
+    const id = e.target.getAttribute("href");
+    console.log(id);
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
