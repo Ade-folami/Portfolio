@@ -29,7 +29,9 @@
           <a href="#section__projects" class="header__navigation-item"
             >Projects</a
           >
-          <a href="#" class="header__navigation-button button">Let's Talk</a>
+          <a href="#" class="header__navigation-button button btn--show-modal"
+            >Let's Talk</a
+          >
         </nav>
       </header>
       <section class="section__home" id="section__home">
@@ -78,36 +80,29 @@
         <h2 class="section__about-skills--heading">My skills</h2>
         <div class="section__about-skills">
           <div class="section__about-skills--soft">
-            <h3 class="section__about-skills--soft-heading">Soft Skills</h3>
-            <ul class="section__about-skills--soft-list">
-              <li class="section__about-skills--soft-list--item">
-                Communication
-              </li>
-              <li class="section__about-skills--soft-list--item">
-                Problem solving
-              </li>
-              <li class="section__about-skills--soft-list--item">Team work</li>
-              <li class="section__about-skills--soft-list--item">
+            <h3 class="section__about-skills--heading">Soft Skills</h3>
+            <ul class="section__about-skills--list">
+              <li class="section__about-skills--list--item">Communication</li>
+              <li class="section__about-skills--list--item">Problem solving</li>
+              <li class="section__about-skills--list--item">Team work</li>
+              <li class="section__about-skills--list--item">
                 Critical Thinking
               </li>
-              <li class="section__about-skills--soft-list--item">
-                Time management
+              <li class="section__about-skills--list--item">Time management</li>
+              <li class="section__about-skills--list--item">
+                Attention to details
               </li>
             </ul>
           </div>
           <div class="section__about-skills--technical">
-            <h3 class="section__about-skills--technical-heading">
-              Technical Skills
-            </h3>
-            <ul class="section__about-skills--technical-list">
-              <li class="section__about-skills--technical-list--item">React</li>
-              <li class="section__about-skills--technical-list--item">
-                Javascript
-              </li>
-              <li class="section__about-skills--technical-list--item">Sass</li>
-              <li class="section__about-skills--technical-list--item">HTML5</li>
-              <li class="section__about-skills--technical-list--item">CSS3</li>
-              <li class="section__about-skills--technical-list--item">GIT</li>
+            <h3 class="section__about-skills--heading">Technical Skills</h3>
+            <ul class="section__about-skills--list">
+              <li class="section__about-skills--list--item">React</li>
+              <li class="section__about-skills--list--item">Javascript</li>
+              <li class="section__about-skills--list--item">Sass</li>
+              <li class="section__about-skills--list--item">HTML5</li>
+              <li class="section__about-skills--list--item">CSS3</li>
+              <li class="section__about-skills--list--item">GIT</li>
             </ul>
           </div>
         </div>
@@ -249,6 +244,21 @@
           </div>
         </div>
       </section>
+
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="modal__header">Drop a message for me</h2>
+        <form class="modal__form">
+          <label>Name</label>
+          <input type="text" />
+          <label>Email Address</label>
+          <input type="email" />
+          <label>Message</label>
+          <input type="text" />
+          <button class="btn">Continue&rarr;</button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
     </main>
     <script src="script.js"></script>
   </body>
