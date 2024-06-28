@@ -65,7 +65,7 @@
           />
         </div>
       </section>
-      <section class="section__about" id="section__about">
+      <section class="section__about section" id="section__about">
         <h1 class="section__about-heading heading-primary">About me:</h1>
         <p class="section__about-paragraph">
           My name is Adefolami Akintokun. I am a Front end Web developer. I
@@ -77,10 +77,18 @@
           users by providing accessible and relatable content, fast loading
           speed and responsiveness.
         </p>
-        <h2 class="section__about-skills--heading">My skills</h2>
+        <h2
+          class="section__about-skills--heading section__about-skills--heading-primary"
+        >
+          My skills
+        </h2>
         <div class="section__about-skills">
           <div class="section__about-skills--soft">
-            <h3 class="section__about-skills--heading">Soft Skills</h3>
+            <h3
+              class="section__about-skills--heading section__about-skills--heading-secondary"
+            >
+              Soft Skills
+            </h3>
             <ul class="section__about-skills--list">
               <li class="section__about-skills--list--item">Communication</li>
               <li class="section__about-skills--list--item">Problem solving</li>
@@ -95,7 +103,11 @@
             </ul>
           </div>
           <div class="section__about-skills--technical">
-            <h3 class="section__about-skills--heading">Technical Skills</h3>
+            <h3
+              class="section__about-skills--heading section__about-skills--heading-secondary"
+            >
+              Technical Skills
+            </h3>
             <ul class="section__about-skills--list">
               <li class="section__about-skills--list--item">React</li>
               <li class="section__about-skills--list--item">Javascript</li>
@@ -107,7 +119,7 @@
           </div>
         </div>
       </section>
-      <section class="section__services" id="section__services">
+      <section class="section__services section" id="section__services">
         <h2 class="section__services--heading">The services I offer:</h2>
         <div class="section__services--container">
           <div class="section__services--container-item">
@@ -172,7 +184,7 @@
           </div>
         </div>
       </section>
-      <section class="section__projects" id="section__projects">
+      <section class="section__projects section" id="section__projects">
         <h1 class="section__projects-heading">Featured Projects:</h1>
         <span class="section__projects-description"
           >Here are some of the projects i have worked on</span
@@ -250,11 +262,11 @@
         <h2 class="modal__header">Drop a message for me</h2>
         <form class="modal__form">
           <label>Name</label>
-          <input type="text" />
+          <input type="text" required />
           <label>Email Address</label>
-          <input type="email" />
+          <input type="email" required />
           <label>Message</label>
-          <input type="text" />
+          <input type="text" required />
           <button class="btn">Continue&rarr;</button>
         </form>
       </div>
