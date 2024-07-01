@@ -260,9 +260,9 @@ body {
   font-family: cursive;
 }
 .section__projects-projects {
-  max-width: 100rem;
+  max-width: 90rem;
   height: 50rem;
-  margin: 0 auto;
+  margin: 3rem auto;
   position: relative;
   overflow: hidden;
 }
@@ -270,17 +270,14 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 50rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.section__projects-projects--item > img {
-  /* Only for images that have different size than slide */
-  width: 100%;
   height: 100%;
-  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__projects-project--item-image {
+  /* height: 10%; */
+  width: 100%;
 }
 
 .sticky {
@@ -293,6 +290,7 @@ body {
   background-color: #b8b9e2f9;
   opacity: 0.9;
   animation: all 0.3s;
+  z-index: 1000;
 }
 
 .modal {
@@ -307,7 +305,7 @@ body {
   background-color: #f3f3f3;
   padding: 5rem 6rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+  z-index: 5000;
   transition: all 0.5s;
 }
 
@@ -366,7 +364,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(4px);
-  z-index: 100;
+  z-index: 2000;
   transition: all 0.5s;
 }
 
