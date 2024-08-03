@@ -1,6 +1,6 @@
 "use strict";
 
-//Selecting elements
+//SELECTING ELEMENTS IN THE DOM
 const nav = document.querySelector(".header__navigation");
 const aboutStn = document.querySelector("#section__about");
 const header = document.querySelector(".header");
@@ -12,7 +12,7 @@ const contactBtn = document.querySelector(
   ".section__home-description--buttons--contact"
 );
 
-//Contact pop-up
+//POP-UP MODAL FOR CONTACT
 const openModal = function (e) {
   e.preventDefault();
   modal.classList.remove("hidden");
@@ -31,18 +31,17 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
 });
 
-//Smooth scrolling for sections navigation
+//SMOOTH SCROLLING FOR SECTIONS NAVIGATION
 nav.addEventListener("click", function (e) {
   e.preventDefault();
 
   if (e.target.classList.contains("header__navigation-item")) {
     const id = e.target.getAttribute("href");
-    console.log(id);
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }
 });
 
-//Navigation fading on hover
+//NAVIGATION FADING ON MOUSE HOVER
 const handleHover = function (e) {
   if (e.target.classList.contains("header__navigation-item")) {
     const link = e.target;
@@ -64,15 +63,16 @@ const handleHover = function (e) {
 nav.addEventListener("mouseover", handleHover.bind(0.5));
 nav.addEventListener("mouseout", handleHover.bind(1.0));
 
-//Sticky navigation
+//STICKY NAVIGATION BAR
 const initialCoords = aboutStn.getBoundingClientRect();
 
 window.addEventListener("scroll", function (e) {
+  e.preventDefault();
   if (window.scrollY > initialCoords.top) header.classList.add("sticky");
   else header.classList.remove("sticky");
 });
 
-//Reveal sections on scroll
+//REVEAL SECTIONS ON SCROLL
 const allSections = document.querySelectorAll(".section");
 const revealSection = function (entries, observer) {
   const [entry] = entries;

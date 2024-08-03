@@ -212,7 +212,7 @@ body {
 }
 
 .section__services {
-  padding: 6rem;
+  padding: 10rem;
 }
 .section__services--heading {
   color: #000;
@@ -248,36 +248,39 @@ body {
 }
 
 .section__projects {
-  padding: 6rem;
+  padding: 6rem auto;
+  height: 50rem;
+  font-family: cursive;
+  background-color: red;
 }
 .section__projects-heading {
   font-size: 3rem;
   font-weight: 500;
-  font-family: cursive;
 }
 .section__projects-description {
   font-size: 1.5rem;
-  font-family: cursive;
 }
 .section__projects-projects {
-  max-width: 90rem;
-  height: 50rem;
+  width: 80%;
+  height: 80%;
   margin: 3rem auto;
+  background-color: blue;
   position: relative;
   overflow: hidden;
 }
-.section__projects-projects--item {
+.section__projects-project--item {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
+  padding: 1rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 .section__projects-project--item-image {
-  /* height: 10%; */
-  width: 100%;
+  width: 50%;
 }
 
 .sticky {
@@ -306,7 +309,7 @@ body {
   padding: 5rem 6rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
   z-index: 5000;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .modal__header {
@@ -375,5 +378,5 @@ body {
 
 .section--hidden {
   opacity: 0;
-  transform: translateX(8rem);
+  transform: translateY(8rem);
 }
