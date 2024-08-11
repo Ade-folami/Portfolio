@@ -93,10 +93,13 @@ allSections.forEach(function (section) {
 });
 
 //SLIDER COMPONENT FOR PROJECTS
+const proContainer = document.querySelector(".section__projects-projects");
 const proSlide = document.querySelectorAll(".project");
 const btnLeft = document.querySelector(".slider__btn--left");
 const btnRight = document.querySelector(".slider__btn--right");
 
+// proContainer.style.overflow = "visible";
+proContainer.style.transform = "scale(0.8)";
 let curSlide = 0;
 const maxSlide = proSlide.length;
 
