@@ -89,6 +89,7 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
+  // section.style.transform = "translateY(-8rem)";
   section.classList.add("section--hidden");
 });
 
@@ -112,7 +113,7 @@ const goToSlide = function (slide) {
 
 goToSlide(0);
 
-//MOVE TO NEXT PROJECT
+//move to next project
 const nextProject = function () {
   if (curSlide === maxSlide - 1) {
     curSlide = 0;
@@ -122,7 +123,7 @@ const nextProject = function () {
   goToSlide(curSlide);
 };
 
-//MOVE TO PREVIOUS PROJECT
+//move to previous project
 const prevProject = function () {
   if (curSlide === 0) {
     curSlide = maxSlide - 1;
@@ -132,5 +133,12 @@ const prevProject = function () {
   goToSlide(curSlide);
 };
 
+//moving project slides with arrow buttons
 btnLeft.addEventListener("click", prevProject);
 btnRight.addEventListener("click", nextProject);
+
+//moving project silides on keypress
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowLeft") prevProject();
+  e.key === "ArrowRight" && nextProject();
+});

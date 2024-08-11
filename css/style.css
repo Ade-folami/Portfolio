@@ -168,13 +168,14 @@ body {
 }
 
 .section__about {
-  padding: 6rem;
+  padding: 6rem auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .section__about-heading {
   color: black;
+  font-family: cursive;
 }
 .section__about-paragraph {
   font-family: verdana;
@@ -212,11 +213,11 @@ body {
 }
 
 .section__services {
-  padding: 10rem;
+  padding: 6rem auto;
 }
 .section__services--heading {
   color: #000;
-  font-style: calibri;
+  font-family: cursive;
 }
 .section__services--container {
   display: grid;
@@ -249,14 +250,14 @@ body {
 
 .section__projects {
   padding: 6rem auto;
-  height: 50rem;
+  height: 70vh;
   font-family: cursive;
   position: relative;
   transition: all 0.3s;
 }
 .section__projects-heading {
   font-size: 3rem;
-  font-weight: 500;
+  color: black;
 }
 .section__projects-description {
   font-size: 1.5rem;
@@ -285,7 +286,7 @@ body {
 
 .slider__btn {
   position: absolute;
-  top: 50%;
+  top: 60%;
   z-index: 100000;
 
   border: none;
@@ -322,7 +323,6 @@ body {
   position: fixed;
   background-color: #b8b9e2f9;
   opacity: 0.9;
-  /* animation: all 0.3s; */
   z-index: 1000;
   transition: all 1s;
 }
@@ -347,6 +347,8 @@ body {
   font-size: 3.25rem;
   margin-bottom: 4.5rem;
   line-height: 1.5;
+  text-transform: uppercase;
+  color: #e12148;
 }
 
 .modal__form {
@@ -376,6 +378,7 @@ body {
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   cursor: pointer;
+  color: #e12148;
 }
 
 .btn--close-modal {
