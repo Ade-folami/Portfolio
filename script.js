@@ -91,3 +91,43 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
+
+//SLIDER COMPONENT FOR PROJECTS
+const proSlide = document.querySelectorAll(".project");
+const btnLeft = document.querySelector(".slider__btn--left");
+const btnRight = document.querySelector(".slider__btn--right");
+
+let curSlide = 0;
+const maxSlide = proSlide.length;
+
+//slide movement function
+const goToSlide = function (slide) {
+  proSlide.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+  );
+};
+
+goToSlide(0);
+
+//MOVE TO NEXT PROJECT
+const nextProject = function () {
+  if (curSlide === maxSlide - 1) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+  goToSlide(curSlide);
+};
+
+//MOVE TO PREVIOUS PROJECT
+const prevProject = function () {
+  if (curSlide === 0) {
+    curSlide = maxSlide - 1;
+  } else {
+    curSlide--;
+  }
+  goToSlide(curSlide);
+};
+
+btnLeft.addEventListener("click", prevProject);
+btnRight.addEventListener("click", nextProject);

@@ -252,6 +252,8 @@ body {
   height: 50rem;
   font-family: cursive;
   background-color: red;
+  position: relative;
+  transition: all 0.3s;
 }
 .section__projects-heading {
   font-size: 3rem;
@@ -262,9 +264,9 @@ body {
 }
 .section__projects-projects {
   width: 80%;
-  height: 80%;
+  height: 100%;
   margin: 3rem auto;
-  background-color: blue;
+  /* background-color: blue; */
   position: relative;
   overflow: hidden;
 }
@@ -281,6 +283,37 @@ body {
 }
 .section__projects-project--item-image {
   width: 50%;
+  /* opacity: 0; */
+}
+
+.slider__btn {
+  position: absolute;
+  top: 60%;
+  z-index: 100000;
+
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  /* color: #333; */
+  color: red;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+.slider__btn:focus {
+  outline: none;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
 }
 
 .sticky {
