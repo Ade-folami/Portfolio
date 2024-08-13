@@ -142,3 +142,8 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") prevProject();
   e.key === "ArrowRight" && nextProject();
 });
+
+window.addEventListener("beforeunload", function (e) {
+  e.preventDefault();
+  e.returnValue = "";
+});
