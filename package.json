@@ -9,5 +9,8 @@
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "vercel": "^37.1.0"
   }
 }
