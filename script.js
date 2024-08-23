@@ -94,6 +94,7 @@ allSections.forEach(function (section) {
 });
 
 //SLIDER COMPONENT FOR PROJECTS
+const proSection = document.querySelector(".section__projects");
 const proContainer = document.querySelector(".section__projects-projects");
 const proSlide = document.querySelectorAll(".project");
 const btnLeft = document.querySelector(".slider__btn--left");
@@ -138,12 +139,8 @@ btnLeft.addEventListener("click", prevProject);
 btnRight.addEventListener("click", nextProject);
 
 //moving project silides on keypress
+
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") prevProject();
   e.key === "ArrowRight" && nextProject();
-});
-
-window.addEventListener("beforeunload", function (e) {
-  e.preventDefault();
-  e.returnValue = "";
 });

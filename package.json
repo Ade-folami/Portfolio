@@ -1,20 +1,13 @@
 {
-  "name": "adefolami",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "My portfolio",
-  "main": "index.js",
-  "dependencies": {
-    "jquery": "^3.6.0",
-    "node-sass": "^4.12.0",
-    "parcel": "^2.11.0",
-    "sass": "^1.53.0"
-  },
-  "devDependencies": {
-    "node-sass": "^4.12.0"
-  },
+  "description": "My personal portfolio",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adefolami",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
