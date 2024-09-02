@@ -100,7 +100,6 @@ const proSlide = document.querySelectorAll(".project");
 const btnLeft = document.querySelector(".slider__btn--left");
 const btnRight = document.querySelector(".slider__btn--right");
 
-// proContainer.style.overflow = "visible";
 proContainer.style.transform = "scale(0.8)";
 let curSlide = 0;
 const maxSlide = proSlide.length;
@@ -139,8 +138,24 @@ btnLeft.addEventListener("click", prevProject);
 btnRight.addEventListener("click", nextProject);
 
 //moving project silides on keypress
-
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") prevProject();
   e.key === "ArrowRight" && nextProject();
 });
+
+//FOOTER LINKS FADING ON MOUSE HOVER
+const links = document.querySelector(".footer__links");
+const footerHover = function (e) {
+  if (e.target.classList.contains("footer__link")) {
+    const link = e.target;
+    const siblings = link
+      .closest(".footer__links")
+      .querySelectorAll(".footer__link");
+
+    siblings.forEach((el) => {
+      if (el !== link) el.style.opacity = this;
+    });
+  }
+};
+links.addEventListener("mouseover", footerHover.bind(0.5));
+links.addEventListener("mouseout", footerHover.bind(1.0));

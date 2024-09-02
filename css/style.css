@@ -255,7 +255,7 @@ body {
 
 .section__projects {
   padding: 6rem auto;
-  height: 80vh;
+  height: 90vh;
   font-family: cursive;
   position: relative;
   transition: all 0.3s;
@@ -284,6 +284,26 @@ body {
   justify-content: space-between;
   align-items: center;
   transition: all 1s;
+}
+.section__projects-project--buttons {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.project__button {
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.project__button:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .slider__btn {
