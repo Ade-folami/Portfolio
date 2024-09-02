@@ -178,16 +178,19 @@ body {
 .section__about-heading {
   color: black;
   font-family: cursive;
+  padding: 1rem;
 }
 .section__about-paragraph {
   font-family: verdana;
   display: inline-block;
+  padding: 2rem;
 }
 .section__about-skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   justify-content: space-around;
+  padding: 2rem;
 }
 .section__about-skills--heading-primary {
   font-size: 3rem;
@@ -252,7 +255,7 @@ body {
 
 .section__projects {
   padding: 6rem auto;
-  height: 70vh;
+  height: 80vh;
   font-family: cursive;
   position: relative;
   transition: all 0.3s;
@@ -281,9 +284,6 @@ body {
   justify-content: space-between;
   align-items: center;
   transition: all 1s;
-}
-.section__projects-project--item-image {
-  width: 50%;
 }
 
 .slider__btn {
@@ -316,6 +316,33 @@ body {
   transform: translate(50%, -50%);
 }
 
+.footer {
+  background-color: #000;
+  color: #fff;
+  font-family: monospace;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__heading {
+  font-size: 3.5rem;
+}
+.footer__links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.footer__links-link {
+  padding: 2rem;
+}
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+}
 .sticky {
   display: flex;
   justify-content: space-around;

@@ -196,10 +196,12 @@ body {
 
 .section__about-heading {
   color: #000;
+  padding: 1rem;
   font-family: cursive;
 }
 
 .section__about-paragraph {
+  padding: 2rem;
   font-family: verdana;
   display: inline-block;
 }
@@ -208,6 +210,7 @@ body {
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
   gap: 1rem;
+  padding: 2rem;
   display: grid;
 }
 
@@ -284,7 +287,7 @@ body {
 }
 
 .section__projects {
-  height: 70vh;
+  height: 80vh;
   padding: 6rem auto;
   font-family: cursive;
   transition: all .3s;
@@ -320,10 +323,6 @@ body {
   top: 0;
 }
 
-.section__projects-project--item-image {
-  width: 50%;
-}
-
 .slider__btn {
   z-index: 100000;
   color: #333;
@@ -351,6 +350,37 @@ body {
 .slider__btn--right {
   right: 6%;
   transform: translate(50%, -50%);
+}
+
+.footer {
+  color: #fff;
+  background-color: #000;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6rem;
+  font-family: monospace;
+  display: flex;
+}
+
+.footer__heading {
+  font-size: 3.5rem;
+}
+
+.footer__links {
+  justify-content: space-between;
+  padding: 1rem;
+  list-style: none;
+  display: flex;
+}
+
+.footer__links-link {
+  padding: 2rem;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
 }
 
 .sticky {
