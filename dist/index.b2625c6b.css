@@ -287,7 +287,7 @@ body {
 }
 
 .section__projects {
-  height: 80vh;
+  height: 90vh;
   padding: 6rem auto;
   font-family: cursive;
   transition: all .3s;
@@ -321,6 +321,29 @@ body {
   display: flex;
   position: absolute;
   top: 0;
+}
+
+.section__projects-project--buttons {
+  justify-content: space-between;
+  width: 50%;
+  display: flex;
+}
+
+.project__button {
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.project__button:hover {
+  color: #fff;
+  background-color: #000;
+  transform: scale(1.1);
 }
 
 .slider__btn {
