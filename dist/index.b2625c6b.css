@@ -33,6 +33,18 @@ body {
   font-size: 3.5rem;
 }
 
+@media (width <= 900px) {
+  .heading-primary {
+    font-size: 3rem;
+  }
+}
+
+@media (width <= 375px) {
+  .heading-primary {
+    font-size: 2.5rem;
+  }
+}
+
 .button {
   text-align: center;
   color: #b8b9e2f9;
@@ -124,6 +136,12 @@ body {
   transition: transform 1s, opacity 1s;
 }
 
+@media (width <= 900px) {
+  .section {
+    padding: 5rem 1.5rem;
+  }
+}
+
 .section__home {
   justify-content: space-around;
   align-items: center;
@@ -145,6 +163,18 @@ body {
 .section__home-description--name {
   color: #fff;
   font-size: 4rem;
+}
+
+@media (width <= 900px) {
+  .section__home-description--name {
+    font-size: 3rem;
+  }
+}
+
+@media (width <= 375px) {
+  .section__home-description--name {
+    font-size: 2.5rem;
+  }
 }
 
 .section__home-description--name--big {
@@ -187,11 +217,29 @@ body {
   transform: scale(1.2);
 }
 
+@media (width <= 900px) {
+  .section__home-imageblock--me:hover {
+    transform: scale(1.1);
+  }
+}
+
 .section__about {
   flex-direction: column;
   justify-content: space-between;
   padding: 6rem auto;
   display: flex;
+}
+
+@media (width <= 900px) {
+  .section__about {
+    padding: 4rem auto;
+  }
+}
+
+@media (width <= 375px) {
+  .section__about {
+    padding: 2.5rem auto;
+  }
 }
 
 .section__about-heading {
@@ -200,10 +248,22 @@ body {
   font-family: cursive;
 }
 
+@media (width <= 900px) {
+  .section__about-heading {
+    padding: .5rem;
+  }
+}
+
 .section__about-paragraph {
   padding: 2rem;
   font-family: verdana;
   display: inline-block;
+}
+
+@media (width <= 900px) {
+  .section__about-paragraph {
+    padding: 1rem;
+  }
 }
 
 .section__about-skills {
@@ -214,10 +274,29 @@ body {
   display: grid;
 }
 
+@media (width <= 900px) {
+  .section__about-skills {
+    gap: .5rem;
+    padding: 1rem;
+  }
+}
+
 .section__about-skills--heading-primary {
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
+}
+
+@media (width <= 900px) {
+  .section__about-skills--heading-primary {
+    font-size: 2.5rem;
+  }
+}
+
+@media (width <= 375px) {
+  .section__about-skills--heading-primary {
+    font-size: 2rem;
+  }
 }
 
 .section__about-skills--heading-secondary {
@@ -225,9 +304,21 @@ body {
   font-weight: 300;
 }
 
+@media (width <= 900px) {
+  .section__about-skils--heading-secondary {
+    font-size: 2rem;
+  }
+}
+
 .section__about-skills--soft {
   background-color: #fff;
   padding: 1rem;
+}
+
+@media (width <= 900px) {
+  .section__about-skills--soft {
+    padding: .5rem;
+  }
 }
 
 .section__about-skills--list {
@@ -235,13 +326,31 @@ body {
   list-style: none;
 }
 
+@media (width <= 900px) {
+  .section__about-skills--list {
+    padding: .5rem;
+  }
+}
+
 .section__about-skills--list--item {
   padding: 1rem;
+}
+
+@media (width <= 900px) {
+  .section__about-skills--list--item {
+    padding: .5rem;
+  }
 }
 
 .section__about-skills--technical {
   background-color: #fff;
   padding: 1rem;
+}
+
+@media (width <= 900px) {
+  .section__about-skills--technical {
+    padding: .5rem;
+  }
 }
 
 .section__services {
@@ -294,9 +403,35 @@ body {
   position: relative;
 }
 
+@media (width <= 900px) {
+  .section__projects {
+    height: 60vh;
+    padding: 4rem auto;
+  }
+}
+
+@media (width <= 375px) {
+  .section__projects {
+    height: 50vh;
+    padding: 3rem auto;
+  }
+}
+
 .section__projects-heading {
   color: #000;
   font-size: 3rem;
+}
+
+@media (width <= 900px) {
+  .section__projects-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (width <= 375px) {
+  .section__projects-heading {
+    font-size: 2rem;
+  }
 }
 
 .section__projects-description {
@@ -309,6 +444,20 @@ body {
   margin: 3rem auto;
   position: relative;
   overflow: hidden;
+}
+
+@media (width <= 900px) {
+  .section__projects-projects {
+    width: 70%;
+    margin: 2.5rem auto;
+  }
+}
+
+@media (width <= 375px) {
+  .section__projects-projects {
+    width: 60%;
+    margin: 2rem auto;
+  }
 }
 
 .section__projects-project--item {
@@ -329,6 +478,12 @@ body {
   display: flex;
 }
 
+@media (width <= 375px) {
+  .section__projects-project--buttons {
+    width: 90%;
+  }
+}
+
 .project__button {
   text-transform: uppercase;
   color: #000;
@@ -338,6 +493,13 @@ body {
   font-size: 1.5rem;
   text-decoration: none;
   transition: all .3s;
+}
+
+@media (width <= 375px) {
+  .project__button {
+    padding: .75rem 1rem;
+    font-size: 1.3rem;
+  }
 }
 
 .project__button:hover {
@@ -359,6 +521,22 @@ body {
   font-size: 3.25rem;
   position: absolute;
   top: 60%;
+}
+
+@media (width <= 900px) {
+  .slider__btn {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 3rem;
+  }
+}
+
+@media (width <= 375px) {
+  .slider__btn {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2.5rem;
+  }
 }
 
 .slider__btn:focus {
@@ -386,8 +564,32 @@ body {
   display: flex;
 }
 
+@media (width <= 900px) {
+  .footer {
+    padding: 4rem;
+  }
+}
+
+@media (width <= 375px) {
+  .footer {
+    padding: 3rem;
+  }
+}
+
 .footer__heading {
   font-size: 3.5rem;
+}
+
+@media (width <= 900px) {
+  .footer__heading {
+    font-size: 3rem;
+  }
+}
+
+@media (width <= 375px) {
+  .footer__heading {
+    font-size: 2.5rem;
+  }
 }
 
 .footer__links {
@@ -397,8 +599,26 @@ body {
   display: flex;
 }
 
+@media (width <= 900px) {
+  .footer__links {
+    padding: .5rem;
+  }
+}
+
 .footer__links-link {
   padding: 2rem;
+}
+
+@media (width <= 900px) {
+  .footer__links-link {
+    padding: 1.5rem;
+  }
+}
+
+@media (width <= 375px) {
+  .footer__links-link {
+    padding: 1rem;
+  }
 }
 
 .footer__link {
@@ -407,7 +627,7 @@ body {
 }
 
 .sticky {
-  opacity: .9;
+  opacity: .8;
   z-index: 1000;
   background-color: #b8b9e2f9;
   justify-content: space-around;
