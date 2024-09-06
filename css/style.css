@@ -346,8 +346,8 @@ body {
 }
 
 .section__projects {
-  padding: 6rem auto;
-  height: 90vh;
+  padding: 8rem auto;
+  height: 100vh;
   font-family: cursive;
   position: relative;
   transition: all 0.3s;
@@ -361,7 +361,7 @@ body {
 @media (max-width: 375px) {
   .section__projects {
     padding: 3rem auto;
-    height: 50vh;
+    height: auto;
   }
 }
 .section__projects-heading {
@@ -381,10 +381,15 @@ body {
 .section__projects-description {
   font-size: 1.5rem;
 }
+@media (max-width: 375px) {
+  .section__projects-description {
+    font-size: 1.2rem;
+  }
+}
 .section__projects-projects {
   width: 80%;
-  height: 100%;
-  margin: 3rem auto;
+  height: 80%;
+  margin: 5rem auto;
   position: relative;
   overflow: hidden;
 }
@@ -396,8 +401,10 @@ body {
 }
 @media (max-width: 375px) {
   .section__projects-projects {
-    width: 60%;
+    width: 100%;
     margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
   }
 }
 .section__projects-project--item {
@@ -411,6 +418,40 @@ body {
   align-items: center;
   transition: all 1s;
 }
+@media (max-width: 375px) {
+  .section__projects-project--item {
+    position: relative;
+    margin: 1rem auto;
+  }
+  .section__projects-project--item:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+}
+
+.section__projects-project--item-heading {
+  font-family: cursive;
+  padding: 0;
+}
+@media (max-width: 375px) {
+  .section__projects-project--item-heading {
+    padding-top: 1rem;
+  }
+}
+.section__projects-project--item--description {
+  font-size: 1.5rem;
+}
+@media (max-width: 900px) {
+  .section__projects-project--item--description {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 375px) {
+  .section__projects-project--item--description {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+  }
+}
+
 .section__projects-project--buttons {
   width: 50%;
   display: flex;
@@ -419,6 +460,7 @@ body {
 @media (max-width: 375px) {
   .section__projects-project--buttons {
     width: 90%;
+    padding-top: 1rem;
   }
 }
 .project__button {
@@ -433,8 +475,9 @@ body {
 }
 @media (max-width: 375px) {
   .project__button {
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1.3rem;
+    margin: 1rem auto;
   }
 }
 .project__button:hover {
@@ -468,9 +511,7 @@ body {
 }
 @media (max-width: 375px) {
   .slider__btn {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 2.5rem;
+    display: none;
   }
 }
 .slider__btn:focus {

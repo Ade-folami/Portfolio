@@ -81,34 +81,39 @@ const proContainer = document.querySelector(".section__projects-projects");
 const proSlide = document.querySelectorAll(".project");
 const btnLeft = document.querySelector(".slider__btn--left");
 const btnRight = document.querySelector(".slider__btn--right");
-proContainer.style.transform = "scale(0.8)";
-let curSlide = 0;
-const maxSlide = proSlide.length;
-//slide movement function
-const goToSlide = function(slide) {
-    proSlide.forEach((s, i)=>s.style.transform = `translateX(${100 * (i - slide)}%)`);
+const projectSlider = function() {
+    if (window.innerWidth < 600) return;
+    else {
+        let curSlide = 0;
+        const maxSlide = proSlide.length;
+        //slide movement function
+        const goToSlide = function(slide) {
+            proSlide.forEach((s, i)=>s.style.transform = `translateX(${100 * (i - slide)}%)`);
+        };
+        goToSlide(0);
+        //move to next project
+        const nextProject = function() {
+            if (curSlide === maxSlide - 1) curSlide = 0;
+            else curSlide++;
+            goToSlide(curSlide);
+        };
+        //move to previous project
+        const prevProject = function() {
+            if (curSlide === 0) curSlide = maxSlide - 1;
+            else curSlide--;
+            goToSlide(curSlide);
+        };
+        //moving project slides with arrow buttons
+        btnLeft.addEventListener("click", prevProject);
+        btnRight.addEventListener("click", nextProject);
+        //moving project silides on keypress
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "ArrowLeft") prevProject();
+            e.key === "ArrowRight" && nextProject();
+        });
+    }
 };
-goToSlide(0);
-//move to next project
-const nextProject = function() {
-    if (curSlide === maxSlide - 1) curSlide = 0;
-    else curSlide++;
-    goToSlide(curSlide);
-};
-//move to previous project
-const prevProject = function() {
-    if (curSlide === 0) curSlide = maxSlide - 1;
-    else curSlide--;
-    goToSlide(curSlide);
-};
-//moving project slides with arrow buttons
-btnLeft.addEventListener("click", prevProject);
-btnRight.addEventListener("click", nextProject);
-//moving project silides on keypress
-document.addEventListener("keydown", function(e) {
-    if (e.key === "ArrowLeft") prevProject();
-    e.key === "ArrowRight" && nextProject();
-});
+projectSlider();
 //FOOTER LINKS FADING ON MOUSE HOVER
 const links = document.querySelector(".footer__links");
 const footerHover = function(e) {

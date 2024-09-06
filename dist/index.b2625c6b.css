@@ -396,8 +396,8 @@ body {
 }
 
 .section__projects {
-  height: 90vh;
-  padding: 6rem auto;
+  height: 100vh;
+  padding: 8rem auto;
   font-family: cursive;
   transition: all .3s;
   position: relative;
@@ -412,7 +412,7 @@ body {
 
 @media (width <= 375px) {
   .section__projects {
-    height: 50vh;
+    height: auto;
     padding: 3rem auto;
   }
 }
@@ -438,10 +438,16 @@ body {
   font-size: 1.5rem;
 }
 
+@media (width <= 375px) {
+  .section__projects-description {
+    font-size: 1.2rem;
+  }
+}
+
 .section__projects-projects {
   width: 80%;
-  height: 100%;
-  margin: 3rem auto;
+  height: 80%;
+  margin: 5rem auto;
   position: relative;
   overflow: hidden;
 }
@@ -455,8 +461,10 @@ body {
 
 @media (width <= 375px) {
   .section__projects-projects {
-    width: 60%;
+    flex-direction: column;
+    width: 100%;
     margin: 2rem auto;
+    display: flex;
   }
 }
 
@@ -472,6 +480,45 @@ body {
   top: 0;
 }
 
+@media (width <= 375px) {
+  .section__projects-project--item {
+    margin: 1rem auto;
+    position: relative;
+  }
+
+  .section__projects-project--item:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+}
+
+.section__projects-project--item-heading {
+  padding: 0;
+  font-family: cursive;
+}
+
+@media (width <= 375px) {
+  .section__projects-project--item-heading {
+    padding-top: 1rem;
+  }
+}
+
+.section__projects-project--item--description {
+  font-size: 1.5rem;
+}
+
+@media (width <= 900px) {
+  .section__projects-project--item--description {
+    font-size: 1.4rem;
+  }
+}
+
+@media (width <= 375px) {
+  .section__projects-project--item--description {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
 .section__projects-project--buttons {
   justify-content: space-between;
   width: 50%;
@@ -481,6 +528,7 @@ body {
 @media (width <= 375px) {
   .section__projects-project--buttons {
     width: 90%;
+    padding-top: 1rem;
   }
 }
 
@@ -497,7 +545,8 @@ body {
 
 @media (width <= 375px) {
   .project__button {
-    padding: .75rem 1rem;
+    margin: 1rem auto;
+    padding: .5rem 1rem;
     font-size: 1.3rem;
   }
 }
@@ -533,9 +582,7 @@ body {
 
 @media (width <= 375px) {
   .slider__btn {
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 2.5rem;
+    display: none;
   }
 }
 
