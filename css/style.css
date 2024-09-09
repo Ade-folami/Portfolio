@@ -613,6 +613,21 @@ body {
   border-radius: 1rem;
   cursor: pointer;
   color: #e12148;
+  outline: none;
+}
+
+.modal__form-button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  color: #e12148;
+  outline: none;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border: 1px solid black;
 }
 
 .btn--close-modal {
