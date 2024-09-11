@@ -10125,19 +10125,19 @@
 62C:\Users\USER\Desktop\Projects\Portfolio\images\hero-image.png133520225495525653 0
 67C:\Users\USER\Desktop\Projects\Portfolio\images\web-programming.png133697604170534556 0
 67C:\Users\USER\Desktop\Projects\Portfolio\dist\bank app.ed955ef2.png133688890377314447 0
+68C:\Users\USER\Desktop\Projects\Portfolio\dist\bank app1.fce1f811.png133700855876306728 0
+75C:\Users\USER\Desktop\Projects\Portfolio\dist\guessing games 1.92241147.png133700855876336718 0
 73C:\Users\USER\Desktop\Projects\Portfolio\dist\guessing games.91c7a3e2.png133688890377364426 0
 73C:\Users\USER\Desktop\Projects\Portfolio\dist\guessing games.d8ff665e.png133697546030586477 0
 64C:\Users\USER\Desktop\Projects\Portfolio\dist\index.0d3a8a9f.css133688890444212404 0
 68C:\Users\USER\Desktop\Projects\Portfolio\dist\index.0d3a8a9f.css.map133688890444482248 0
+68C:\Users\USER\Desktop\Projects\Portfolio\dist\index.b2625c6b.css.map133700855876736490 0
 63C:\Users\USER\Desktop\Projects\Portfolio\dist\index.d0f27f1a.js133688890444222392 0
 67C:\Users\USER\Desktop\Projects\Portfolio\dist\index.d0f27f1a.js.map133688890444482248 0
+56C:\Users\USER\Desktop\Projects\Portfolio\dist\index.html133700855876296750 0
 69C:\Users\USER\Desktop\Projects\Portfolio\dist\me small 1.09e60381.png133697678588549713 0
 66C:\Users\USER\Desktop\Projects\Portfolio\dist\natours.8cd6fdde.png133688890377164528 0
-64C:\Users\USER\Desktop\Projects\Portfolio\dist\resume.pdf.7916.3r133700146187603383 0
-56C:\Users\USER\Desktop\Projects\Portfolio\dist\index.html133700855876296750 0
 67C:\Users\USER\Desktop\Projects\Portfolio\dist\Portfolio.3464ddca.js133700855876306728 0
-68C:\Users\USER\Desktop\Projects\Portfolio\dist\bank app1.fce1f811.png133700855876306728 0
-75C:\Users\USER\Desktop\Projects\Portfolio\dist\guessing games 1.92241147.png133700855876336718 0
-68C:\Users\USER\Desktop\Projects\Portfolio\dist\index.b2625c6b.css.map133700855876736490 0
 71C:\Users\USER\Desktop\Projects\Portfolio\dist\Portfolio.3464ddca.js.map133700855876726496 0
 56C:\Users\USER\Desktop\Projects\Portfolio\dist\resume.pdf133700855876866412 0
+64C:\Users\USER\Desktop\Projects\Portfolio\dist\resume.pdf.7916.3r133700146187603383 0
